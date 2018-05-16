@@ -5,19 +5,17 @@ class Hero extends React.Component {
   render() {
     return (
       <div>
-        {/* <div className="heroImage">
-        <img className="heroImage" src={require('../images/hero.jpg')}alt="dinks" /> */}
-        <div class="heroImage">
-          <video autoPlay loop>
-            <source className="video1280" src={require('../images/herovid.mp4')}alt="movie" />
+        <div className="heroImage">
+          <div className="contentWrap">
+            <h1 className="heroTextBig">Welcome!</h1>
+            <a href="#f1">
+              <button className="rsvpButton">RSVP!</button>
+            </a>
+            <h4 className="heroTextSmall">Vidängsvägen 49, kl 19:00</h4>
+          </div>
+          <video autoPlay loop infinite>
+            <source id="video" src={require("../images/herovid.mp4")} type="video/mp4" alt="video" />
           </video>
-
-          <h1 className="heroTextBig">Welcome!</h1>
-          <a href="#f1">
-            <button className="rsvpButton">RSVP!</button>
-          </a>
-          <h4 className="heroTextSmall">Time & place</h4>
-          {/* </div> */}
         </div>
       </div>
     )

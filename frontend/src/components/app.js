@@ -59,46 +59,45 @@ class App extends React.Component {
     return (
       <div>
         <Hero />
-        <div className="infoText">
-          <p>Text, info about party etc!</p>
+        <div className="contentBox">
+          <div className="infoText">
+            <p><h2>Welcome to 2018's greates summer party!</h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris tincidunt sem sed arcu. Curabitur vitae diam non enim vestibulum interdum. Praesent in mauris eu tortor porttitor accumsan. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Etiam neque. Fusce aliquam vestibulum ipsum. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Maecenas libero. Vivamus luctus egestas leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam at arcu a est sollicitudin euismod. Phasellus rhoncus. Donec vitae arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. In sem justo, commodo ut, suscipit at, pharetra vitae, orci.</p>
+          </div>
+          <form onSubmit={this.handleSubmit} >
+            <div className="boxes" id="f1">
+              <label>
+                <h3>Name:</h3>
+                <input
+                  name="userName"
+                  type="text"
+                  value={this.state.userName}
+                  onChange={this.handleName} />
+              </label>
+              <label>
+                <h3>Email:</h3>
+                <input
+                  name="email"
+                  type="text"
+                  value={this.state.email}
+                  onChange={this.handleEmail} />
+              </label>
+              <label>
+                <h3>Allergies:</h3>
+                <textarea
+                  name="allergies"
+                  type="text"
+                  value={this.state.alleriges}
+                  onChange={this.handleAllergies} />
+              </label>
+            </div>
+            <div className="submitButton">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
         </div>
-        <form onSubmit={this.handleSubmit} >
-          <div className="boxes" id="f1">
-            <label>
-              <h3>Name:</h3>
-              <input
-                name="userName"
-                type="text"
-                value={this.state.userName}
-                onChange={this.handleName} />
-            </label>
-            <label>
-              <h3>Email:</h3>
-              <input
-                name="email"
-                type="text"
-                value={this.state.email}
-                onChange={this.handleEmail} />
-            </label>
-            <label>
-              <h3>Allergies:</h3>
-              <textarea
-                name="allergies"
-                type="text"
-                value={this.state.alleriges}
-                onChange={this.handleAllergies} />
-            </label>
-          </div>
-          <div className="submitButton">
-            <button type="submit">Submit</button>
-          </div>
-          <div className="pP">
-            <img className="parrot" src={require('../images/tenor-57282185.gif')}alt="feeling" />
-          </div>
-          <ImageBar />
-          <GoogleMaps />
-          <Footer />
-        </form>
+        <ImageBar />
+        <GoogleMaps />
+        <Footer />
       </div>
     )
   }

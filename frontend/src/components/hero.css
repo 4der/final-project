@@ -2,12 +2,6 @@ h1 {
   font-size: 20vw;
 }
 
-video {
-  width: 100%;
-  height: auto;
-  z-index: -2
-}
-
 .heroImage {
   width: 100%;
   height: auto;
@@ -17,7 +11,6 @@ video {
 }
 
 .heroTextSmall {
-  z-index: +2;
   position: absolute;
   top: 60%;
   left: 50%;
@@ -25,15 +18,18 @@ video {
 }
 
 .rsvpButton {
-  z-index: +2;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.contentWrap {
+display: block;
+}
+
 .heroTextBig {
-  z-index: +2;
+  z-index: +7;
   position: absolute;
   top: 10%;
   left: 50%;
@@ -43,30 +39,31 @@ video {
 }
 
 .heroTextBig:hover {
-  z-index: +2;
+  z-index: +7;
   animation: textanimation 1s ease infinite;
-cursor: crosshair;
+  cursor: crosshair;
 }
 
 @keyframes textanimation {
-  25%  {
-    color:#16F4D0;
-    background-position:0% 50%;
+  25% {
+    color: #16F4D0;
+    background-position: 0% 50%;
   }
-  50%  {
-    color:#FF8A5B;
-    background-position:100% 50%;
+  50% {
+    color: #FF8A5B;
+    background-position: 100% 50%;
   }
   60% {
     color: orange;
   }
   100% {
-    color:#16F4D0;
-    background-position:0% 50%;
+    color: #16F4D0;
+    background-position: 0% 50%;
   }
 }
 
 .rsvpButton {
+  z-index: +7;
   background-color: transparent;
   border: none;
   color: black;
@@ -78,4 +75,9 @@ cursor: crosshair;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+video {
+  width: 100%;
+  height: auto;
 }
