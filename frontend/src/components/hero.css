@@ -1,0 +1,46 @@
+h1 {
+  font-size: 20vw;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.heroTextSmall {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rsvpButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heroTextBig {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rsvpButton {
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid black;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
