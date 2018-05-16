@@ -20,7 +20,7 @@ class SimpleMap extends Component {
         <p>Text about all you need to know, time, place map to the right etc!</p>
         <div className="googleMap" style={{ height: '40vh', width: '20%' }}>
           <GoogleMapReact
-            bootstrapURLKeys={{ key: "AIzaSyC1j1XJpv_Me4wP-XUEmVE5EwjwvjaUbHM" }}
+            bootstrapURLKeys={{ key: "" }}
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}
           >
