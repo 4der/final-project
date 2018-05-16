@@ -2,6 +2,11 @@ h1 {
   font-size: 20vw;
 }
 
+video {
+  width: 100%;
+  height: auto;
+}
+
 .heroImage {
   width: 100%;
   height: auto;
@@ -29,6 +34,31 @@ h1 {
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+
+.heroTextBig:hover {
+  animation: textanimation 1s ease infinite;
+cursor: crosshair;
+}
+
+@keyframes textanimation {
+  25%  {
+    color:#16F4D0;
+    background-position:0% 50%;
+  }
+  50%  {
+    color:#FF8A5B;
+    background-position:100% 50%;
+  }
+  60% {
+    color: orange;
+  }
+  100% {
+    color:#16F4D0;
+    background-position:0% 50%;
+  }
 }
 
 .rsvpButton {

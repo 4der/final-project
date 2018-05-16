@@ -61,8 +61,6 @@ class App extends React.Component {
         <Hero />
         <div className="infoText">
           <p>Text, info about party etc!</p>
-          <h1></h1>
-          <h3></h3>
         </div>
         <form onSubmit={this.handleSubmit} >
           <div className="boxes" id="f1">
@@ -93,6 +91,9 @@ class App extends React.Component {
           </div>
           <div className="submitButton">
             <button type="submit">Submit</button>
+          </div>
+          <div className="pP">
+            <img className="parrot" src={require('../images/tenor-57282185.gif')}alt="feeling" />
           </div>
           <ImageBar />
           <GoogleMaps />
