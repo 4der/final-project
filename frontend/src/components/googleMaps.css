@@ -1,16 +1,16 @@
 .mapsText {
 background-color: blue;
 color: white;
+display: flex;
+flex-flow: row;
+justify-content: space-around;
 }
 
-iframe {
-width: 300px;
-height: 300px;
-border: 10px solid grey;
-border-radius: 10px;
+.mapsText p {
+  font-size: 20px;
 }
 
-.mapImage {
-  width: 20%;
-  height: auto;
+.googleMap {
+border: 10px solid white;
+border-radius: 5px;
 }

@@ -5,6 +5,7 @@ h1 {
 video {
   width: 100%;
   height: auto;
+  z-index: -2
 }
 
 .heroImage {
@@ -16,6 +17,7 @@ video {
 }
 
 .heroTextSmall {
+  z-index: +2;
   position: absolute;
   top: 60%;
   left: 50%;
@@ -23,6 +25,7 @@ video {
 }
 
 .rsvpButton {
+  z-index: +2;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,6 +33,7 @@ video {
 }
 
 .heroTextBig {
+  z-index: +2;
   position: absolute;
   top: 10%;
   left: 50%;
@@ -39,6 +43,7 @@ video {
 }
 
 .heroTextBig:hover {
+  z-index: +2;
   animation: textanimation 1s ease infinite;
 cursor: crosshair;
 }
