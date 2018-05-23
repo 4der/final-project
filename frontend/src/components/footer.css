@@ -1,33 +1,77 @@
 .aboutHost {
+  color: #ff9a9a;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 10px;
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
 
-.picOfHost img{
+.nameBling:hover {
+  animation: textanimation 1s ease infinite;
+  cursor: crosshair;
+}
+
+@keyframes textanimation {
+  25% {
+    color: #16F4D0;
+    background-position: 0% 50%;
+  }
+  50% {
+    color: #FF8A5B;
+    background-position: 100% 50%;
+  }
+  60% {
+    color: orange;
+  }
+  100% {
+    color: #16F4D0;
+    background-position: 0% 50%;
+  }
+}
+
+.aboutHost p {
+  font-size: 50px;
+}
+
+.picOfHost img {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border: 2px solid black;
 }
 
+.email {
+  font-size: 30px;
+}
+
 a:link {
-    color: #ff9a9a;
-     text-decoration: none;
+  color: #ff9a9a;
+  text-decoration: none;
 }
 
 a:visited {
-    color: #ffcd9a;
-     text-decoration: none;
+  color: #ffcd9a;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #ff9acd;
-     text-decoration: none;
+  color: #ff9acd;
+  text-decoration: none;
 }
 
 a:active {
-    color: #9affff;
-     text-decoration: none;
+  color: #9affff;
+  text-decoration: none;
+}
+
+.hello {
+  width: 25px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .aboutHost p {
+    font-size: 25px;
+  }
 }

@@ -1,21 +1,90 @@
 .mapsText {
-background-color: blue;
-color: white;
-display: flex;
-flex-flow: row;
-justify-content: space-around;
-padding: 10px;
+  background-color: #cdcdff;
+  color: white;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 10px;
+  padding: 100px;
+  position: relative;
 }
 
 .mapsText p {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .googleMap {
-border: 10px solid white;
-border-radius: 5px;
+  border: 10px solid white;
+  border-radius: 5px;
+  height: 40vh;
+  width: 30%;
 }
 
 .mapContent {
   width: 40%;
+}
+
+.rsvpButton2 button {
+  z-index: +7;
+  background-color: transparent;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid black;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.rsvpButton2 {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+  .mapsText {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 50px;
+    padding: 70px;
+  }
+  .mapContent {
+    width: 100%;
+    height: auto;
+  }
+  .googleMap {
+    height: 40vh;
+    width: 90%;
+  }
+  .rsvpButton2 {
+    top: 96%;
+  }
+}
+
+@media (min-width : 600px) and (max-width: 900px) {
+  .mapsText {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 50px;
+    padding: 50px;
+  }
+  .googleMap {
+    height: 40vh;
+    width: 80%;
+  }
+  .mapContent {
+    width: 80%;
+    height: auto;
+  }
+  .rsvpButton2 {
+    top: 97%;
+  }
 }

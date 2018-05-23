@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   font-size: 20vw;
 }
@@ -24,12 +28,8 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-.contentWrap {
-display: block;
-}
-
 .heroTextBig {
-  z-index: +7;
+  z-index: 7;
   position: absolute;
   top: 10%;
   left: 50%;
@@ -38,9 +38,8 @@ display: block;
   height: auto;
 }
 
-.heroTextBig:hover {
-  z-index: +7;
-  animation: textanimation 1s ease infinite;
+.heroTextBig {
+  animation: textanimation 2s ease infinite;
   cursor: crosshair;
 }
 
@@ -63,7 +62,7 @@ display: block;
 }
 
 .rsvpButton {
-  z-index: +7;
+  z-index: 7;
   background-color: transparent;
   border: none;
   color: black;
@@ -80,4 +79,12 @@ display: block;
 video {
   width: 100%;
   height: auto;
+  z-index: 0;
+}
+
+@media (max-width: 600px) {
+  .rsvpButton {
+    padding: 6px 15px;
+    font-size: 10px;
+  }
 }

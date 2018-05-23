@@ -61,7 +61,9 @@ class App extends React.Component {
         <Hero />
         <div className="contentBox">
           <div className="infoText">
-            <p><h2>Welcome to 2018's greates summer party!</h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris tincidunt sem sed arcu. Curabitur vitae diam non enim vestibulum interdum. Praesent in mauris eu tortor porttitor accumsan. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Etiam neque. Fusce aliquam vestibulum ipsum. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Maecenas libero. Vivamus luctus egestas leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam at arcu a est sollicitudin euismod. Phasellus rhoncus. Donec vitae arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. In sem justo, commodo ut, suscipit at, pharetra vitae, orci.</p>
+            <p><h2>Welcome to 2018's greates summer party!</h2>
+              Come celebrate summer ☀️, and that Im done with my studies at awesome Technigo! 👑 Drinks, food and awesome weather is promised!
+            I'ts going to be fun, and loads of surprises, I guarantee that! 🎉</p>
           </div>
           <form onSubmit={this.handleSubmit} >
             <div className="boxes" id="f1">

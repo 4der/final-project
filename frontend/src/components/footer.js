@@ -7,12 +7,12 @@ class Footer extends React.Component {
       <div>
         <div className="aboutHost">
           <div className="picOfHost">
-            <img className="imageBar" src={require('../images/tenor-57282185.gif')}alt="feeling" />
+            <img className="imageBar" src={require('../images/spaceCat.gif')}alt="picture of host" />
           </div>
-          <h2>Hosted by:</h2>
-          <p> Erika Adamsson </p>
+          <p>Hosted by:</p>
+          <p className="nameBling"> Erika Adamsson </p>
           <div className="email">
-            <a href="mailto:adamsson.erika@gmail.com?body= Hello friend!">adamsson.erika@gmail.com</a>
+            <a href="mailto:adamsson.erika@gmail.com?body= Hello friend!">Say hello! <img className="hello" src={require('../images/wave.png')}alt="Hello!" /></a>
           </div>
         </div>
       </div>

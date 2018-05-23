@@ -5,5 +5,22 @@
 
 .imageBar img {
   width: 20%;
-  height: auto;
+  height: 10%;
+}
+
+
+@media (max-width: 600px) {
+  .imageBar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+  }
+  .imageBar img {
+    width: 100%;
+    height: 70%;
+  }
+  .imageBar2 {
+    display: none;
+  }
 }
