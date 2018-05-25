@@ -16,7 +16,7 @@ class App extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault()
-    fetch("http://localhost:8081/guest", {
+    fetch("https://final-projectea.herokuapp.com/guest", {
       method: "POST",
       headers: {
         Accept: "application/json, textplain, */*",
