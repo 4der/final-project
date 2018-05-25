@@ -10,7 +10,8 @@ app.use(bodyParser.json())
 
 app.use(cors())
 
-mongoose.connect("mongodb://localhost/final-project", { useMongoClient: true })
+const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/final-project"
+mongoose.connect(mongoUrl, { useMongoClient: true })
 
 mongoose.Promise = Promise
 
@@ -23,7 +24,8 @@ const Signup = mongoose.model("Signup", {
   allergies: { type: String } // , required: true, minlength: [8, "You need at least 8 characters in your password"]
 })
 
-app.listen(8081, () => {
+const port = process.env.PORT || 8081
+app.listen(port, () => {
     console.log("Products API listening on port 8081!")
   }
 )
